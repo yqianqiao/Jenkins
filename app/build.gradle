@@ -40,13 +40,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField("String", "text", "${TEXT}")
+            buildConfigField("Integer", "text", "${TEXT}")
             signingConfig signingConfigs.config
         }
         debug{
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField("String", "text", "${TEXT}")
+            buildConfigField("Integer", "text", "${TEXT}")
         }
 
     }
