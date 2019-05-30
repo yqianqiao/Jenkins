@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        but.text = BuildConfig.text.toString()
+        but.text = BuildConfig.text
+        but2.text = BuildConfig.num.toString()
     }
 }
