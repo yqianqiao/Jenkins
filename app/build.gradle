@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+
 android {
 
     signingConfigs {
@@ -29,7 +30,7 @@ android {
 
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.huimee.jenkins"
+        applicationId project.APPID
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -43,6 +44,7 @@ android {
             buildConfigField("Integer", "num", "${NUM}")
             buildConfigField("String", "text", "${TEXT}")
             signingConfig signingConfigs.config
+
         }
         debug {
             minifyEnabled false
