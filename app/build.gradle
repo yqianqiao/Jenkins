@@ -43,6 +43,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField("Integer", "num", "${NUM}")
             buildConfigField("String", "text", "${TEXT}")
+            resValue "string", "app_name", "${APP_NAME}"
             signingConfig signingConfigs.config
 
         }
@@ -51,6 +52,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField("Integer", "num", "${NUM}")
             buildConfigField("String", "text", "${TEXT}")
+            resValue "string", "app_name", "${APP_NAME}"
         }
 
     }
