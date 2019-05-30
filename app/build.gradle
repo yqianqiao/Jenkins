@@ -19,6 +19,12 @@ android {
             storeFile file('D:\\Jenkins\\android.keystore')
             storePassword 'huimee666'
         }
+        config{
+            keyAlias 'huimee'
+            keyPassword 'huimee666'
+            storeFile file('D:\\Jenkins\\android.keystore')
+            storePassword 'huimee666'
+        }
     }
 
     compileSdkVersion 28
@@ -35,6 +41,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField("String", "text", "${TEXT}")
+            signingConfig signingConfigs.config
         }
         debug{
             minifyEnabled false
